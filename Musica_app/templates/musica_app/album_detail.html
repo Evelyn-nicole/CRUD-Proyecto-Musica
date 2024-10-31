@@ -1,0 +1,16 @@
+{% extends "musica_app/base.html" %}
+
+{% block content %}
+
+<div class="album-detail">
+    <div class="frosted-glass-album">
+        <h1 class="text-center">Detalles del Álbum</h1>
+        <p><strong>Título:</strong> {{ album.titulo }}</p>
+        <p><strong>Fecha de Lanzamiento:</strong> {{ album.fecha_lanzamiento }}</p>
+        <p><strong>Género:</strong> {{ album.genero }}</p>
+        
+        <a href="{% url 'album_index' %}" class="btn btn-secondary mt-3"><i class="fas fa-arrow-left"></i> Volver</a>
+    </div>
+</div>
+
+{% endblock %}

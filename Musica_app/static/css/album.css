@@ -1,0 +1,414 @@
+/*ALBUM_INDEX*/
+
+/* Estilos específicos para album-index */
+.album-index .frosted-glass {
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    max-width: 800px; /* Ancho del contenedor */
+    margin: 80px auto;
+    color: #ffffff;
+}
+
+/* Encabezado */
+.album-index h1 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Tabla */
+.album-index .table {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* Encabezado de la tabla */
+.album-index .table thead {
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
+    color: #ffffff;
+}
+
+.album-index .table th, .album-index .table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde translúcido */
+}
+
+/* Filas pares en la tabla */
+.album-index .table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05); /* Fondo más claro para filas pares */
+}
+
+/* Botones de acciones */
+.album-index .btn-info {
+    background-color: rgba(0, 123, 255, 0.2); /* Fondo azul translúcido */
+    color: #ffffff;
+}
+
+.album-index .btn-warning {
+    background-color: rgba(255, 193, 7, 0.2); /* Fondo amarillo translúcido */
+    color: #ffffff;
+}
+
+.album-index .btn-danger {
+    background-color: rgba(220, 53, 69, 0.2); /* Fondo rojo translúcido */
+    color: #ffffff;
+}
+
+.album-index .btn-info:hover, 
+.album-index .btn-warning:hover, 
+.album-index .btn-danger:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo más claro en hover */
+    color: #000000;
+}
+
+/* Botón Crear Nuevo Álbum */
+.album-index .btn-create {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.album-index .btn-create:hover {
+    background-color: #47db34;
+    color: #000000;
+}
+
+
+/****************************************************************************************************************/
+/*ALBUM_CREATE*/
+
+
+/* Estilos específicos para album-create */
+.album-create .frosted-glass-album {
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    max-width: 600px; /* Ancho del contenedor */
+    margin: 80px auto;
+    color: #ffffff;
+}
+
+/* Encabezado */
+.album-create h1 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+.album-create form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los campos */
+}
+
+.album-create label {
+    font-weight: bold;
+    color: #f5f5f5; /* Color claro para etiquetas */
+}
+
+.album-create input[type="text"],
+.album-create input[type="date"],
+.album-create select,
+.album-create textarea {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    color: #ffffff;
+    border: 1px solid #ffffff; /* Borde blanco */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.album-create input[type="text"]:focus,
+.album-create input[type="date"]:focus,
+.album-create select:focus,
+.album-create textarea:focus {
+    border-color: #3498db; /* Borde azul al hacer foco */
+}
+
+/* Botones de acción */
+.album-create .btn-primary {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.album-create .btn-primary:hover {
+    background-color: #3498db;
+    color: #000000;
+}
+
+.album-create .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.album-create .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000000;
+}
+
+
+/****************************************************************************************************************/
+/*ALBUM_DETAIL*/
+
+/* Estilos específicos para album-detail */
+.album-detail .frosted-glass-album {
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    max-width: 600px; /* Ancho del contenedor */
+    margin: 80px auto;
+    color: #ffffff;
+}
+
+/* Encabezado */
+.album-detail h1 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Detalles del álbum */
+.album-detail p {
+    color: #dfe6e9;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.album-detail p strong {
+    color: #ffffff;
+}
+
+/* Estilo de la lista de artistas */
+.album-detail ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.album-detail ul li {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde ligero */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Botón de regreso */
+.album-detail .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.album-detail .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000000;
+}
+
+
+
+/****************************************************************************************************************/
+/*ALBUM_UDATE*/
+
+/* Estilos específicos para album-update */
+.album-update .frosted-glass-album {
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    max-width: 600px; /* Ancho del contenedor */
+    margin: 80px auto;
+    color: #ffffff;
+}
+
+/* Encabezado */
+.album-update h1 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo de formulario */
+.album-update form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre elementos */
+}
+
+.album-update label {
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+.album-update input[type="text"],
+.album-update input[type="date"],
+.album-update select,
+.album-update textarea {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    color: #ffffff;
+    border: 1px solid #ffffff; /* Borde blanco */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.album-update input[type="text"]:focus,
+.album-update input[type="date"]:focus,
+.album-update select:focus,
+.album-update textarea:focus {
+    border-color: #3498db; /* Borde azul al hacer foco */
+}
+
+/* Botones de formulario */
+.album-update .btn-primary {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.album-update .btn-primary:hover {
+    background-color: #3498db; /* Fondo azul al pasar el cursor */
+    color: #000000; /* Texto negro en hover */
+}
+
+.album-update .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.album-update .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000000;
+}
+
+
+/****************************************************************************************************************/
+/*ALBUM_DELETE*/
+
+/* Estilos específicos para album-delete */
+.album-delete .frosted-glass-form {
+    background: rgba(255, 0, 0, 0.1); /* Fondo ligeramente rojo para destacar la acción de eliminación */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 80px auto;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Estilo del encabezado */
+.album-delete h1 {
+    color: #ff4c4c; /* Color rojo para destacar el encabezado */
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo del párrafo de confirmación */
+.album-delete p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+/* Botones de acción */
+.album-delete .btn-danger, .album-delete .btn-secondary {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.album-delete .btn-danger {
+    background-color: #ff4c4c; /* Color rojo fuerte para el botón de eliminar */
+    color: #ffffff;
+    border: 1px solid #ff4c4c;
+}
+
+.album-delete .btn-danger:hover {
+    background-color: #ff7878; /* Color más claro en hover */
+    color: #000000;
+}
+
+.album-delete .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.album-delete .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo más claro en hover */
+    color: #000000;
+}

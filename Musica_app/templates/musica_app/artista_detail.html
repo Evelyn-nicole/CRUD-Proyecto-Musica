@@ -1,0 +1,16 @@
+{% extends "musica_app/base.html" %}
+
+{% block content %}
+
+<div class="artista-detail">
+    <div class="frosted-glass-details">
+        <h1 class="text-center">Detalles del Artista</h1>
+        <p><strong>Nombre:</strong> {{ artista.nombre }}</p>
+        <p><strong>Nacionalidad:</strong> {{ artista.nacionalidad }}</p>
+        <p><strong>Género Musical:</strong> {{ artista.genero_musical }}</p>
+        
+        <a href="{% url 'artista_index' %}" class="btn btn-secondary mt-3"><i class="fas fa-arrow-left"></i> Volver</a>
+    </div>
+</div>
+
+{% endblock %}

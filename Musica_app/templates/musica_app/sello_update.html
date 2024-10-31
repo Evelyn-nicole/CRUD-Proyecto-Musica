@@ -1,0 +1,17 @@
+{% extends "musica_app/base.html" %}
+
+{% block content %}
+<div class="sello-update">
+    <div class="frosted-glass-label">
+        <h1 class="text-center">Editar Sello Discográfico</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Actualizar</button>
+            <a href="{% url 'sello_index' %}" class="btn btn-secondary"><i class="fas fa-times"></i> Cancelar</a>
+        </form>
+    
+    </div>
+</div>
+
+{% endblock %}

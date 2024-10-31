@@ -1,0 +1,15 @@
+{% extends "musica_app/base.html" %}
+
+{% block content %}
+
+<div class="perfil-detail">
+    <div class="frosted-glass-profile">
+        <h1 class="text-center">Detalles del Perfil de Redes Sociales</h1>
+        <p><strong>Instagram:</strong> <a href="{{ perfil.instagram }}" target="_blank">{{ perfil.instagram }}</a></p>
+        <p><strong>Facebook:</strong> <a href="{{ perfil.facebook }}" target="_blank">{{ perfil.facebook }}</a></p>
+        <p><strong>Twitter:</strong> <a href="{{ perfil.twitter }}" target="_blank">{{ perfil.twitter }}</a></p>
+        <a href="{% url 'perfil_index' %}" class="btn btn-secondary mt-3"><i class="fas fa-arrow-left"></i> Volver</a>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,500 @@
+/*ARTISTA_INDEX/
+
+/* Contenedor de vidrio esmerilado para artista-index */
+.artista-index .frosted-glass {
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    backdrop-filter: blur(10px); /* Desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Para Safari */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Sombra */
+    max-width: 800px;
+    margin: 80px auto; /* Centrado en pantalla */
+    color: #ffffff;
+}
+
+/* Encabezado de sección */
+.artista-index h1 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Tabla de artista-index en estilo esmerilado */
+.artista-index .table {
+    width: 100%;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    backdrop-filter: blur(5px); /* Desenfoque menor */
+    -webkit-backdrop-filter: blur(5px);
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* Encabezado de la tabla */
+.artista-index .table thead {
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+/* Estilo de celdas en la tabla */
+.artista-index .table th, .artista-index .table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo para filas pares */
+.artista-index .table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Enlaces en las celdas de la tabla */
+.artista-index .table td a {
+    color: #f6fafe;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+/* Botón de creación de artista */
+.artista-index .btn-create {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.artista-index .btn-create:hover {
+    background-color: #26e30d;
+    color: #000000;
+}
+
+/* Botones de acción (Ver, Editar, Eliminar) */
+.artista-index .btn-sm {
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.artista-index .btn-info {
+    background-color: rgba(0, 123, 255, 0.2);
+    color: #ffffff;
+}
+
+.artista-index .btn-warning {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #ffffff;
+}
+
+.artista-index .btn-danger {
+    background-color: rgba(220, 53, 69, 0.2);
+    color: #ffffff;
+}
+
+.artista-index .btn-info:hover,
+.artista-index .btn-warning:hover,
+.artista-index .btn-danger:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000000;
+}
+
+/* Estilo para el mensaje de "No hay artistas registrados" */
+.artista-index .table tbody .text-center {
+    color: #dfe6e9;
+    font-size: 1em;
+    padding: 20px;
+}
+
+
+/****************************************************************************************************************/
+/*ARTISTA_CREATE*/
+
+/* Contenedor de vidrio esmerilado para artista-create */
+.artista-create .frosted-glass-form {
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    backdrop-filter: blur(10px); /* Desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Para Safari */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Sombra */
+    max-width: 600px;
+    margin: 80px auto;
+    color: #ffffff;
+}
+
+/* Encabezado de sección */
+.artista-create h1 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Formulario en artista-create */
+.artista-create form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre elementos */
+}
+
+/* Etiquetas en el formulario */
+.artista-create label {
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+/* Campos de entrada en el formulario */
+.artista-create input[type="text"], 
+.artista-create input[type="date"], 
+.artista-create select, 
+.artista-create textarea {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.artista-create input[type="text"]:focus, 
+.artista-create input[type="date"]:focus, 
+.artista-create select:focus, 
+.artista-create textarea:focus {
+    border-color: #3498db;
+}
+
+/* Botones para el formulario */
+.artista-create .btn-primary, .artista-create .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.artista-create .btn-primary:hover {
+    background-color: #3498db;
+    color: #000000;
+}
+
+.artista-create .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000000;
+}
+
+/* Contenedor de vidrio esmerilado para artista-detail */
+.artista-detail .frosted-glass-details {
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    backdrop-filter: blur(10px); /* Desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Sombra */
+    max-width: 600px;
+    margin: 80px auto;
+    color: #ffffff;
+}
+
+/* Encabezado de sección */
+.artista-detail h1 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo de texto en detalles del artista */
+.artista-detail p {
+    color: #dfe6e9; /* Color claro */
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.artista-detail p strong {
+    color: #ffffff; /* Negrita para títulos */
+}
+
+/* Lista de álbumes en los que aparece el artista */
+.artista-detail .list-group {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0;
+    margin-top: 15px;
+}
+
+.artista-detail .list-group-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde ligero */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Botón de regreso */
+.artista-detail .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.artista-detail .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000000;
+}
+
+
+
+
+/****************************************************************************************************************/
+/*ARTISTA_DETAIL*/
+
+/* Estilos específicos para artista-detail */
+.artista-detail .frosted-glass-details {
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Sombra */
+    max-width: 600px;
+    margin: 80px auto;
+    color: #ffffff;
+}
+
+/* Encabezado de sección */
+.artista-detail h1 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo de texto en detalles del artista */
+.artista-detail p {
+    color: #dfe6e9; /* Color claro */
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.artista-detail p strong {
+    color: #ffffff; /* Color blanco para títulos */
+}
+
+/* Lista de álbumes en los que aparece el artista */
+.artista-detail .list-group {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0;
+    margin-top: 15px;
+}
+
+.artista-detail .list-group-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde ligero */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Botón de regreso */
+.artista-detail .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.artista-detail .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000000;
+}
+
+
+
+
+/****************************************************************************************************************/
+/*ARTISTA_UPDATE*/
+
+/* Estilos específicos para artista-edit */
+.artista-edit .frosted-glass-form {
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Sombra */
+    max-width: 600px;
+    margin: 80px auto;
+    color: #ffffff;
+}
+
+/* Encabezado de sección */
+.artista-edit h1 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo del formulario */
+.artista-edit form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre elementos */
+}
+
+/* Estilo de etiquetas en el formulario */
+.artista-edit label {
+    font-weight: bold;
+    color: #f5f5f5; /* Color claro para etiquetas */
+}
+
+/* Estilo de campos de entrada */
+.artista-edit input[type="text"], 
+.artista-edit input[type="date"], 
+.artista-edit select, 
+.artista-edit textarea {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    color: #ffffff;
+    border: 1px solid #ffffff; /* Borde blanco */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.artista-edit input[type="text"]:focus, 
+.artista-edit input[type="date"]:focus, 
+.artista-edit select:focus, 
+.artista-edit textarea:focus {
+    border-color: #3498db; /* Borde azul cuando se selecciona */
+}
+
+/* Botones de acción en el formulario */
+.artista-edit .btn-primary, .artista-edit .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.artista-edit .btn-primary:hover {
+    background-color: #3498db; /* Fondo azul en hover */
+    color: #000000; /* Texto negro */
+}
+
+.artista-edit .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo más claro en hover */
+    color: #000000; /* Texto negro */
+}
+
+
+/****************************************************************************************************************/
+/*ARTISTA_DELETE*/
+/* Estilos específicos para artista-delete */
+.artista-delete .frosted-glass-form {
+    background: rgba(255, 0, 0, 0.1); /* Fondo ligeramente rojo para destacar la acción de eliminación */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 80px auto;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Estilo del encabezado */
+.artista-delete h1 {
+    color: #ff4c4c; /* Color rojo para destacar el encabezado */
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo del párrafo de confirmación */
+.artista-delete p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+/* Botones de acción */
+.artista-delete .btn-danger, .artista-delete .btn-secondary {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.artista-delete .btn-danger {
+    background-color: #ff4c4c; /* Color rojo fuerte para el botón de eliminar */
+    color: #ffffff;
+    border: 1px solid #ff4c4c;
+}
+
+.artista-delete .btn-danger:hover {
+    background-color: #ff7878; /* Color más claro en hover */
+    color: #000000;
+}
+
+.artista-delete .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.artista-delete .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo más claro en hover */
+    color: #000000;
+}

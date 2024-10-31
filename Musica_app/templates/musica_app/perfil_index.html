@@ -1,0 +1,40 @@
+{% extends "musica_app/base.html" %}
+
+{% block content %}
+
+<div class="perfil-index">
+    <div class="frosted-glass">
+        <h1 class="text-center">Lista de Perfiles de Redes Sociales</h1>
+        <a href="{% url 'perfil_create' %}" class="btn btn-create"><i class="fas fa-plus"></i> Crear Nuevo Perfil</a>
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Instagram</th>
+                    <th>Facebook</th>
+                    <th>Twitter</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for perfil in perfiles %}
+                <tr>
+                    <td><a href="{{ perfil.instagram }}" target="_blank">{{ perfil.instagram }}</a></td>
+                    <td><a href="{{ perfil.facebook }}" target="_blank">{{ perfil.facebook }}</a></td>
+                    <td><a href="{{ perfil.twitter }}" target="_blank">{{ perfil.twitter }}</a></td>
+                    <td>
+                        <a href="{% url 'perfil_detail' perfil.id %}" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
+                        <a href="{% url 'perfil_update' perfil.id %}" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
+                        <a href="{% url 'perfil_delete' perfil.id %}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="4" class="text-center">No hay perfiles registrados.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

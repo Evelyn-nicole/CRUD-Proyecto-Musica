@@ -1,0 +1,91 @@
+/* Fondo y fuente principal */
+body {
+    background-image: url("../img/fondo11.jpg"); /* Imagen de fondo */
+    background-size: cover; /* Cubrir toda la pantalla */
+    background-attachment: fixed; /* Fijar fondo al desplazarse */
+    background-position: center; /* Centrar imagen */
+    background-repeat: no-repeat; /* No repetir imagen */
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* Color de texto por defecto */
+    margin: 0;
+    height: 100vh; /* Asegura que el cuerpo tenga la altura completa */
+    overflow: hidden;
+}
+
+/* Superposición oscura sobre la imagen de fondo */
+body::before {
+    content: "";
+    position: fixed; /* Asegura que la superposición cubra toda la pantalla */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Cubre el ancho total de la ventana */
+    height: 100vh; /* Cubre la altura total de la ventana */
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo negro translúcido al 50% */
+    z-index: -1; /* Mantener la superposición detrás del contenido */
+}
+
+/* Estilo para encabezados de sección */
+h1 {
+    color: #ffffff; /* Color blanco para el texto */
+    text-align: center; /* Centrado */
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+/* Navbar con transparencia parcial */
+.navbar {
+    background-color: rgba(20, 20, 20, 0.7); /* Fondo gris oscuro translúcido */
+    padding: 10px 20px;
+    border-bottom: 2px solid #dd1777a7; /* Borde inferior de color rosa oscuro */
+    
+}
+
+/* Links de navegación */
+.navbar .nav-link {
+    color: #EAEAEA !important; /* Gris claro para el texto */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s; 
+}
+
+.navbar .nav-link:hover {
+    color: #c30b5a !important; /* Rosa fuerte en hover */
+}
+
+/* Marca (navbar-brand) */
+.navbar-brand {
+    color: #EAEAEA !important; /* Gris claro para el nombre de la marca */
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+    color: #c30b5a !important; /* Rosa fuerte al pasar el cursor sobre la marca */
+}
+
+/* Iconos en el NAV */
+.navbar .nav-link i {
+    color: #a50b55; /* Rosa oscuro para los iconos */
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+    font-size: 1.2em;
+}
+
+.navbar .nav-link i:hover {
+    color: #EAEAEA; /* Cambia el color del ícono a gris claro en hover */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+    }
+    .navbar-brand {
+        font-size: 1.2em;
+    }
+    .nav-link {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}

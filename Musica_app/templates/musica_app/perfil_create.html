@@ -1,0 +1,22 @@
+{% extends "musica_app/base.html" %}
+
+{% block content %}
+
+
+<div class="perfil-create">
+    <div class="frosted-glass-profile">
+        <h1 class="text-center">Crear Nuevo Perfil de Redes Sociales</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Guardar</button>
+            <a href="{% url 'perfil_index' %}" class="btn btn-secondary"><i class="fas fa-times"></i> Cancelar</a>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}

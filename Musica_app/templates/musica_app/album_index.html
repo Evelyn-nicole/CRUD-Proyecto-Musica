@@ -1,0 +1,44 @@
+{% extends "musica_app/base.html" %}
+
+{% block content %}
+
+<div class="album-index">
+    <div class="frosted-glass">
+        <h1 class="text-center">Lista de Álbumes</h1>
+        <a href="{% url 'album_create' %}" class="btn btn-create"><i class="fas fa-plus"></i> Crear Nuevo Álbum</a>
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Título</th>
+                    <th>Fecha de Lanzamiento</th>
+                    <th>Género</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for album in albumes %}
+                <tr>
+                    <td>{{ album.titulo }}</td>
+                    <td>{{ album.fecha_lanzamiento }}</td>
+                    <td>{{ album.genero }}</td>
+                    <td>
+                        <a href="{% url 'album_detail' album.id %}" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
+                        <a href="{% url 'album_update' album.id %}" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
+                        <a href="{% url 'album_delete' album.id %}" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="4" class="text-center">No hay álbumes registrados.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}

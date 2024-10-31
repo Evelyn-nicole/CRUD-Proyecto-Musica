@@ -1,0 +1,16 @@
+{% extends "musica_app/base.html" %}
+
+{% block content %}
+<div class="artista-delete">
+    <div class="frosted-glass-form">
+        <h1 class="text-center text-danger">Eliminar Artista</h1>
+        <p class="text-center">¿Estás seguro de que deseas eliminar al artista <strong>{{ artista.nombre }}</strong>?</p>
+        <form method="post" class="text-center">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Eliminar</button>
+            <a href="{% url 'artista_index' %}" class="btn btn-secondary"><i class="fas fa-times"></i> Cancelar</a>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

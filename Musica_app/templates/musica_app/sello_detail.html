@@ -1,0 +1,12 @@
+{% extends "musica_app/base.html" %}
+
+{% block content %}
+<div class="sello-detail">
+    <div class="frosted-glass-label">
+        <h1 class="text-center">Detalles del Sello Discográfico</h1>
+        <p><strong>Nombre:</strong> {{ sello.nombre }}</p>
+        <a href="{% url 'sello_index' %}" class="btn btn-secondary mt-3"><i class="fas fa-arrow-left"></i> Volver</a>
+    </div>
+</div>
+
+{% endblock %}
