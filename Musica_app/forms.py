@@ -4,11 +4,11 @@ from .models import Artista, Album, PerfilRedesSociales, SelloDiscografico
 class ArtistaForm(forms.ModelForm):
     class Meta:
         model = Artista
-        fields = ['nombre', 'nacionalidad', 'genero_musical']  # Eliminamos 'perfil' y 'sello'
+        fields = ['nombre', 'nacionalidad', 'genero_musical']  # Para agregar las realaciones aqui agregaria 'perfil' y 'sello'
 
     def save(self, commit=True):
         instance = super().save(commit=False)
-        instance.full_clean()  # Ejecuta las validaciones del modelo
+        instance.full_clean()  # para ejecutar las validaciones del modelo
         if commit:
             instance.save()
         return instance
@@ -16,7 +16,7 @@ class ArtistaForm(forms.ModelForm):
 class AlbumForm(forms.ModelForm):
     class Meta:
         model = Album
-        fields = ['titulo', 'fecha_lanzamiento', 'genero']  # Eliminamos 'artistas'
+        fields = ['titulo', 'fecha_lanzamiento', 'genero']  # Para agregar las realaciones aqui agregaria 'artistas'
 
     def save(self, commit=True):
         instance = super().save(commit=False)
