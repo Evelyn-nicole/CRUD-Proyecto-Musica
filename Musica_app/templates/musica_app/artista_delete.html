@@ -3,7 +3,7 @@
 {% block content %}
 <div class="artista-delete">
     <div class="frosted-glass-form">
-        <h1 class="text-center text-danger">Eliminar Artista</h1>
+        <h1 class="text-center">Eliminar Artista</h1>
         <p class="text-center">¿Estás seguro de que deseas eliminar al artista <strong>{{ artista.nombre }}</strong>?</p>
         <form method="post" class="text-center">
             {% csrf_token %}

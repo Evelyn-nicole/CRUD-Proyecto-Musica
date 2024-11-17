@@ -90,17 +90,17 @@
 }
 
 .artista-index .btn-info {
-    background-color: rgba(0, 123, 255, 0.2);
+    background-color: rgba(11, 57, 142, 0.577);
     color: #ffffff;
 }
 
 .artista-index .btn-warning {
-    background-color: rgba(255, 193, 7, 0.2);
+    background-color: rgba(187, 187, 21, 0.656);
     color: #ffffff;
 }
 
 .artista-index .btn-danger {
-    background-color: rgba(220, 53, 69, 0.2);
+    background-color: rgba(219, 10, 10, 0.658);
     color: #ffffff;
 }
 
@@ -117,6 +117,12 @@
     font-size: 1em;
     padding: 20px;
 }
+
+
+
+
+
+
 
 
 /****************************************************************************************************************/
@@ -175,12 +181,12 @@
 .artista-create input[type="date"]:focus, 
 .artista-create select:focus, 
 .artista-create textarea:focus {
-    border-color: #3498db;
+    border-color: #e6e7e8;
 }
 
 /* Botones para el formulario */
 .artista-create .btn-primary, .artista-create .btn-secondary {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(174, 125, 125, 0.2);
     color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 10px;
@@ -193,19 +199,21 @@
 }
 
 .artista-create .btn-primary:hover {
-    background-color: #3498db;
-    color: #000000;
+    background-color: rgba(26, 161, 11, 0.916); /* Fondo más claro en hover */
+    color: #ffffff;
 }
 
 .artista-create .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    color: #000000;
+    background-color: rgba(219, 10, 10, 0.658);
+    color: #ffffff;
 }
 
+
+/*ARTISTA_DETAIL*/
 /* Contenedor de vidrio esmerilado para artista-detail */
 .artista-detail .frosted-glass-details {
     background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
-    backdrop-filter: blur(10px); /* Desenfoque */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
     -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
     border-radius: 15px;
     padding: 30px;
@@ -268,86 +276,9 @@
 }
 
 .artista-detail .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    color: #000000;
+    background-color: rgba(222, 12, 12, 0.808);
+    color: #fcfcfc;
 }
-
-
-
-
-/****************************************************************************************************************/
-/*ARTISTA_DETAIL*/
-
-/* Estilos específicos para artista-detail */
-.artista-detail .frosted-glass-details {
-    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
-    backdrop-filter: blur(10px); /* Efecto de desenfoque */
-    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Sombra */
-    max-width: 600px;
-    margin: 80px auto;
-    color: #ffffff;
-}
-
-/* Encabezado de sección */
-.artista-detail h1 {
-    color: #ffffff;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Estilo de texto en detalles del artista */
-.artista-detail p {
-    color: #dfe6e9; /* Color claro */
-    font-size: 1.1em;
-    margin: 10px 0;
-}
-
-.artista-detail p strong {
-    color: #ffffff; /* Color blanco para títulos */
-}
-
-/* Lista de álbumes en los que aparece el artista */
-.artista-detail .list-group {
-    list-style-type: none; /* Sin viñetas */
-    padding: 0;
-    margin-top: 15px;
-}
-
-.artista-detail .list-group-item {
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde ligero */
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-/* Botón de regreso */
-.artista-detail .btn-secondary {
-    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-.artista-detail .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    color: #000000;
-}
-
 
 
 
@@ -425,21 +356,23 @@
 }
 
 .artista-edit .btn-primary:hover {
-    background-color: #3498db; /* Fondo azul en hover */
-    color: #000000; /* Texto negro */
+    background-color: rgba(26, 161, 11, 0.916); /* Fondo más claro en hover */
+    color: #ffffff; /* Texto negro */
 }
 
 .artista-edit .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.4); /* Fondo más claro en hover */
-    color: #000000; /* Texto negro */
+    background-color: rgba(219, 10, 10, 0.658);
+    color: #ffffff; /* Texto negro */
 }
+
+
+
+
 
 
 /****************************************************************************************************************/
 /*ARTISTA_DELETE*/
-/* Estilos específicos para artista-delete */
 .artista-delete .frosted-glass-form {
-    background: rgba(255, 0, 0, 0.1); /* Fondo ligeramente rojo para destacar la acción de eliminación */
     backdrop-filter: blur(10px); /* Efecto de desenfoque */
     -webkit-backdrop-filter: blur(10px);
     border-radius: 15px;
@@ -453,7 +386,7 @@
 
 /* Estilo del encabezado */
 .artista-delete h1 {
-    color: #ff4c4c; /* Color rojo para destacar el encabezado */
+    color: #ecdfdf; /* Color rojo para destacar el encabezado */
     text-align: center;
     font-weight: bold;
     font-size: 2em;
@@ -478,14 +411,14 @@
 }
 
 .artista-delete .btn-danger {
-    background-color: #ff4c4c; /* Color rojo fuerte para el botón de eliminar */
+    background-color: rgba(255, 255, 255, 0.2);
     color: #ffffff;
-    border: 1px solid #ff4c4c;
+    border: 1px solid #e0e0e0;
 }
 
 .artista-delete .btn-danger:hover {
-    background-color: #ff7878; /* Color más claro en hover */
-    color: #000000;
+    background-color: rgba(219, 10, 10, 0.658);
+    color: #fffdfd;
 }
 
 .artista-delete .btn-secondary {
@@ -495,6 +428,6 @@
 }
 
 .artista-delete .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.4); /* Fondo más claro en hover */
-    color: #000000;
+    background-color: rgba(26, 161, 11, 0.916); /* Fondo más claro en hover */
+    color: #eee8e8;
 }

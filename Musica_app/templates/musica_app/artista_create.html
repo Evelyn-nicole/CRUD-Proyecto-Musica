@@ -5,11 +5,75 @@
 <div class="artista-create">
     <div class="frosted-glass-form">
         <h1 class="text-center">Crear Nuevo Artista</h1>
+        
+        <!-- Mostrar Errores Generales -->
+        {% if form.non_field_errors %}
+        <div class="alert alert-danger">
+            {{ form.non_field_errors }}
+        </div>
+        {% endif %}
+
         <form method="post">
             {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Guardar</button>
-            <a href="{% url 'artista_index' %}" class="btn btn-secondary"><i class="fas fa-times"></i> Cancelar</a>
+
+            <!-- Campo Nombre -->
+            <div class="form-group">
+                <label for="id_nombre">Nombre:</label>
+                {{ form.nombre }}
+                <small class="text-danger">{{ form.nombre.errors }}</small>
+            </div>
+
+            <!-- Campo Nacionalidad -->
+            <div class="form-group">
+                <label for="id_nacionalidad">Nacionalidad:</label>
+                {{ form.nacionalidad }}
+                <small class="text-danger">{{ form.nacionalidad.errors }}</small>
+            </div>
+
+            <!-- Campo Perfil de Redes Sociales -->
+            <div class="form-group">
+                <label for="id_perfil_redes_sociales">Perfil Redes Sociales:</label>
+                {{ form.perfil_redes_sociales }}
+                <small class="text-danger">{{ form.perfil_redes_sociales.errors }}</small>
+            </div>
+            
+            <!-- Campo Sello Discográfico -->
+            <div class="form-group">
+                <label for="id_sello_discografico">Sello Discográfico:</label>
+                {{ form.sello_discografico }}
+                <small class="text-danger">{{ form.sello_discografico.errors }}</small>
+            </div>
+
+            <!-- Género Musical y Álbumes en una Fila -->
+            <div class="row">
+                <!-- Campo Género Musical -->
+                <div class="col-md-6 mb-3">
+                    <label for="id_genero_musical">Género Musical:</label>
+                    <div class="checkbox-group">
+                        {{ form.genero_musical }}
+                    </div>
+                    <small class="text-danger">{{ form.genero_musical.errors }}</small>
+                </div>
+
+                <!-- Campo Álbumes -->
+                <div class="col-md-6 mb-3">
+                    <label for="id_albumes">Álbumes:</label>
+                    <div class="checkbox-group">
+                        {{ form.albumes }}
+                    </div>
+                    <small class="text-danger">{{ form.albumes.errors }}</small>
+                </div>
+            </div>
+
+            <!-- Botones de Acción -->
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary mr-2">
+                    <i class="fas fa-save"></i> Guardar
+                </button>
+                <a href="{% url 'artista_index' %}" class="btn btn-secondary ml-2">
+                    <i class="fas fa-times"></i> Cancelar
+                </a>
+            </div>
         </form>
     </div>
 </div>

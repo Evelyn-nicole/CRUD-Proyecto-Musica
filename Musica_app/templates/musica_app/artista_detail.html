@@ -7,8 +7,27 @@
         <h1 class="text-center">Detalles del Artista</h1>
         <p><strong>Nombre:</strong> {{ artista.nombre }}</p>
         <p><strong>Nacionalidad:</strong> {{ artista.nacionalidad }}</p>
-        <p><strong>Género Musical:</strong> {{ artista.genero_musical }}</p>
+        <p><strong>Sello Discografico:</strong> {{ artista.sello_discografico }}</p>
+        <p><strong>Género Musical:</strong>
         
+            {% if artista.genero_musical.all %}
+                {% for genero in artista.genero_musical.all %}
+                    {{ genero.nombre }}{% if not forloop.last %}, {% endif %}
+                {% endfor %}
+            {% else %}
+                <span class="text-muted">Sin género asignado</span>
+            {% endif %}
+        </p>
+        <br><br>
+        <h3>Álbumes en los que aparece</h3>
+        <ul class="list-group">
+            {% for album in albumes %}
+                <li class="list-group-item">{{ album.titulo }}</li>
+            {% empty %}
+                <li class="list-group-item">No hay álbumes registrados para este artista.</li>
+            {% endfor %}
+        </ul>
+
         <a href="{% url 'artista_index' %}" class="btn btn-secondary mt-3"><i class="fas fa-arrow-left"></i> Volver</a>
     </div>
 </div>

@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD Proyecto Musica</title>
+    <title>Music Project</title>
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome CSS for icons -->
@@ -12,33 +14,50 @@
     <!-- Custom CSS -->
     <link href="{% static 'css/styles.css' %}" rel="stylesheet">
     <link href="{% static 'css/artista.css' %}" rel="stylesheet">
-    <link href="{% static 'css/perfil.css' %}" rel="stylesheet">
-    <link href="{% static 'css/album.css' %}" rel="stylesheet">
-    <link href="{% static 'css/sello.css' %}" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="{% url 'home' %}">Proyecto Musica</a>
+        <a class="navbar-brand ml-5" href="{% url 'home' %}">Music Project</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="{% url 'artista_index' %}"><i class="fas fa-music"></i> Artistas</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'perfil_index' %}"><i class="fas fa-user"></i> Perfiles</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'album_index' %}"><i class="fas fa-record-vinyl"></i> Álbumes</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'sello_index' %}"><i class="fas fa-building"></i> Sellos</a></li>
+                <li class="nav-item mr-5"><a class="nav-link" href="{% url 'artista_index' %}"><i class="fas fa-music"></i> Artistas</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Main Content Container -->
+    <!-- Mostrar mensajes con SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        {% if messages %}
+            {% for message in messages %}
+                Swal.fire({
+                    icon: '{% if message.tags == "success" %}success{% elif message.tags == "error" %}error{% elif message.tags == "info" %}info{% elif message.tags == "warning" %}warning{% endif %}',
+                    title: '{{ message|escapejs }}',
+                    timer: 3000,
+                    showConfirmButton: false,
+                    toast: true,
+                    position: 'top-end'
+                });
+            {% endfor %}
+        {% endif %}
+    </script>
+
+    <!-- Main Content -->
     <div class="container mt-4 p-4">
         {% block content %}{% endblock %}
     </div>
 
-    <!-- Bootstrap JS and dependencies -->
+    <!-- Footer -->
+    <footer class="footer text-center py-3 text-white">
+        <p>&copy; 2024 Music Project. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

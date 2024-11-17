@@ -1,0 +1,92 @@
+[
+    {
+        "model": "Musica_app.perfilredessociales",
+        "pk": 1,
+        "fields": {
+            "instagram": "https://instagram.com/artist1",
+            "facebook": "https://facebook.com/artist1",
+            "twitter": "https://twitter.com/artist1"
+        }
+    },
+    {
+        "model": "Musica_app.perfilredessociales",
+        "pk": 2,
+        "fields": {
+            "instagram": "https://instagram.com/artist2",
+            "facebook": "https://facebook.com/artist2",
+            "twitter": "https://twitter.com/artist2"
+        }
+    },
+    {
+        "model": "Musica_app.perfilredessociales",
+        "pk": 3,
+        "fields": {
+            "instagram": "https://instagram.com/artist3",
+            "facebook": "https://facebook.com/artist3",
+            "twitter": "https://twitter.com/artist3"
+        }
+    },
+    {
+        "model": "Musica_app.perfilredessociales",
+        "pk": 4,
+        "fields": {
+            "instagram": "https://instagram.com/artist4",
+            "facebook": "https://facebook.com/artist4",
+            "twitter": "https://twitter.com/artist4"
+        }
+    },
+    {
+        "model": "Musica_app.perfilredessociales",
+        "pk": 5,
+        "fields": {
+            "instagram": "https://instagram.com/artist5",
+            "facebook": "https://facebook.com/artist5",
+            "twitter": "https://twitter.com/artist5"
+        }
+    },
+    {
+        "model": "Musica_app.perfilredessociales",
+        "pk": 6,
+        "fields": {
+            "instagram": "https://instagram.com/artist6",
+            "facebook": "https://facebook.com/artist6",
+            "twitter": "https://twitter.com/artist6"
+        }
+    },
+    {
+        "model": "Musica_app.perfilredessociales",
+        "pk": 7,
+        "fields": {
+            "instagram": "https://instagram.com/artist7",
+            "facebook": "https://facebook.com/artist7",
+            "twitter": "https://twitter.com/artist7"
+        }
+    },
+    {
+        "model": "Musica_app.perfilredessociales",
+        "pk": 8,
+        "fields": {
+            "instagram": "https://instagram.com/artist8",
+            "facebook": "https://facebook.com/artist8",
+            "twitter": "https://twitter.com/artist8"
+        }
+    },
+    {
+        "model": "Musica_app.perfilredessociales",
+        "pk": 9,
+        "fields": {
+            "instagram": "https://instagram.com/artist9",
+            "facebook": "https://facebook.com/artist9",
+            "twitter": "https://twitter.com/artist9"
+        }
+    },
+    {
+        "model": "Musica_app.perfilredessociales",
+        "pk": 10,
+        "fields": {
+            "instagram": "https://instagram.com/artist10",
+            "facebook": "https://facebook.com/artist10",
+            "twitter": "https://twitter.com/artist10"
+        }
+    }
+]

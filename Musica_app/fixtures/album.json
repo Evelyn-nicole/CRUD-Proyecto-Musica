@@ -1,0 +1,116 @@
+[
+    {
+        "model": "Musica_app.album",
+        "pk": 1,
+        "fields": {
+            "titulo": "Greatest Hits",
+            "fecha_lanzamiento": "2020-01-01",
+            "generos": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "Musica_app.album",
+        "pk": 2,
+        "fields": {
+            "titulo": "Back in Black",
+            "fecha_lanzamiento": "1980-07-25",
+            "generos": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "Musica_app.album",
+        "pk": 3,
+        "fields": {
+            "titulo": "Thriller",
+            "fecha_lanzamiento": "1982-11-30",
+            "generos": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "Musica_app.album",
+        "pk": 4,
+        "fields": {
+            "titulo": "The Dark Side of the Moon",
+            "fecha_lanzamiento": "1973-03-01",
+            "generos": [
+                1,
+                5
+            ]
+        }
+    },
+    {
+        "model": "Musica_app.album",
+        "pk": 5,
+        "fields": {
+            "titulo": "Abbey Road",
+            "fecha_lanzamiento": "1969-09-26",
+            "generos": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "Musica_app.album",
+        "pk": 6,
+        "fields": {
+            "titulo": "Random Access Memories",
+            "fecha_lanzamiento": "2013-05-17",
+            "generos": [
+                5
+            ]
+        }
+    },
+    {
+        "model": "Musica_app.album",
+        "pk": 7,
+        "fields": {
+            "titulo": "Kind of Blue",
+            "fecha_lanzamiento": "1959-08-17",
+            "generos": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "Musica_app.album",
+        "pk": 8,
+        "fields": {
+            "titulo": "Legend",
+            "fecha_lanzamiento": "1984-05-08",
+            "generos": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "Musica_app.album",
+        "pk": 9,
+        "fields": {
+            "titulo": "Rumours",
+            "fecha_lanzamiento": "1977-02-04",
+            "generos": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "Musica_app.album",
+        "pk": 10,
+        "fields": {
+            "titulo": "Nevermind",
+            "fecha_lanzamiento": "1991-09-24",
+            "generos": [
+                1,
+                10
+            ]
+        }
+    }
+]

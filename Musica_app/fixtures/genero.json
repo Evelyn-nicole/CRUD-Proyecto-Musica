@@ -1,0 +1,72 @@
+[
+    {
+        "model": "Musica_app.genero",
+        "pk": 1,
+        "fields": {
+            "nombre": "Rock"
+        }
+    },
+    {
+        "model": "Musica_app.genero",
+        "pk": 2,
+        "fields": {
+            "nombre": "Pop"
+        }
+    },
+    {
+        "model": "Musica_app.genero",
+        "pk": 3,
+        "fields": {
+            "nombre": "Jazz"
+        }
+    },
+    {
+        "model": "Musica_app.genero",
+        "pk": 4,
+        "fields": {
+            "nombre": "Reggaeton"
+        }
+    },
+    {
+        "model": "Musica_app.genero",
+        "pk": 5,
+        "fields": {
+            "nombre": "Electrónica"
+        }
+    },
+    {
+        "model": "Musica_app.genero",
+        "pk": 6,
+        "fields": {
+            "nombre": "Hip-Hop"
+        }
+    },
+    {
+        "model": "Musica_app.genero",
+        "pk": 7,
+        "fields": {
+            "nombre": "Blues"
+        }
+    },
+    {
+        "model": "Musica_app.genero",
+        "pk": 8,
+        "fields": {
+            "nombre": "Country"
+        }
+    },
+    {
+        "model": "Musica_app.genero",
+        "pk": 9,
+        "fields": {
+            "nombre": "Clásica"
+        }
+    },
+    {
+        "model": "Musica_app.genero",
+        "pk": 10,
+        "fields": {
+            "nombre": "Metal"
+        }
+    }
+]

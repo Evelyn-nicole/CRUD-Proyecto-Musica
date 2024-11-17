@@ -1,0 +1,72 @@
+[
+    {
+        "model": "Musica_app.sellodiscografico",
+        "pk": 1,
+        "fields": {
+            "nombre": "Sony Music"
+        }
+    },
+    {
+        "model": "Musica_app.sellodiscografico",
+        "pk": 2,
+        "fields": {
+            "nombre": "Universal Music"
+        }
+    },
+    {
+        "model": "Musica_app.sellodiscografico",
+        "pk": 3,
+        "fields": {
+            "nombre": "Warner Music"
+        }
+    },
+    {
+        "model": "Musica_app.sellodiscografico",
+        "pk": 4,
+        "fields": {
+            "nombre": "Atlantic Records"
+        }
+    },
+    {
+        "model": "Musica_app.sellodiscografico",
+        "pk": 5,
+        "fields": {
+            "nombre": "Columbia Records"
+        }
+    },
+    {
+        "model": "Musica_app.sellodiscografico",
+        "pk": 6,
+        "fields": {
+            "nombre": "Island Records"
+        }
+    },
+    {
+        "model": "Musica_app.sellodiscografico",
+        "pk": 7,
+        "fields": {
+            "nombre": "Def Jam Recordings"
+        }
+    },
+    {
+        "model": "Musica_app.sellodiscografico",
+        "pk": 8,
+        "fields": {
+            "nombre": "Capitol Records"
+        }
+    },
+    {
+        "model": "Musica_app.sellodiscografico",
+        "pk": 9,
+        "fields": {
+            "nombre": "Republic Records"
+        }
+    },
+    {
+        "model": "Musica_app.sellodiscografico",
+        "pk": 10,
+        "fields": {
+            "nombre": "Motown"
+        }
+    }
+]
